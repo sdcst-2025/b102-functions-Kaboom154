@@ -21,6 +21,8 @@ Your recipe:
 import random
 
 def randomIngredient():
-    pass  # Replace this line with your code
+    random.sample(['sugar','milk','chicken','butter','salt'],k=5)
+    
 
-# your code
+for i in range(0,5):
+    pass
