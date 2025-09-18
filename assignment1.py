@@ -21,8 +21,12 @@ Your recipe:
 import random
 
 def randomIngredient():
-    random.sample(['sugar','milk','chicken','butter','salt'],k=5)
-    
-
-for i in range(0,5):
     pass
+    #random.randint(0,200)
+
+ingredientList=random.sample(['sugar','milk','chicken','butter','salt'],k=5)
+
+print(ingredientList)
+for i in range(0,5):
+    x=ingredientList.pop(0)
+    print(x)
