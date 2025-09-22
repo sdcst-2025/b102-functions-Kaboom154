@@ -18,13 +18,13 @@ divisor=int(input('divisor:'))
 dividend=int(input('dividend:'))
 
 def isDiv(divisor,dividend):
-    pass
+    remainder=divisor % dividend
+    return remainder==0
 
-
-x=isDiv(divisor,dividend)
+divCheck=isDiv(divisor,dividend)
+print('divisible:',divCheck)
 
 assert isDiv(4,2) == True
 assert isDiv(4,3) == False
 assert isDiv(10,5) == True
 assert isDiv(10,3) == False
-
