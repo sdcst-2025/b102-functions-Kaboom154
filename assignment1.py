@@ -21,17 +21,18 @@ Your recipe:
 import random
 
 def randomIngredient():
-    ingredientList=random.sample(['sugar', random.randint(1,100),'milk','chicken','butter','salt'],k=5)
-    #randomNumber=random.randint(0,100)
+    ingredientList=(random.sample(['sugar','milk','chicken','butter','salt'],k=5))
     return ingredientList
-    #,randomNumber
 
+z=randomIngredient()
 
+def randomNumber():
+    randNumb=random.randint(1,100)
+    return randNumb
 
-print(randomIngredient())
-
+print('funky chicken recipe:')
 for i in range(0,5):
-    #x=ingredientlist.pop(0)
-    x=randomIngredient().pop(0)
-    # function here runs anew every time it is called; find way to make it stay same
-    print(x)
+    x=z.pop(0)
+    # function randomIngredient() runs anew every time it is called; find way to make it stay same
+        #(function randomIngredient() has been defined as a variable to avoid rerunning as a function)
+    print(randomNumber(),'cup(s) of',x)

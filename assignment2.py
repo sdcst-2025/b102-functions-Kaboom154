@@ -14,9 +14,14 @@ final balance: 1320.68
 
 """
 
-def isDiv(divisor,divident):
+divisor=int(input('divisor:'))
+dividend=int(input('dividend:'))
+
+def isDiv(divisor,dividend):
     pass
 
+
+x=isDiv(divisor,dividend)
 
 assert isDiv(4,2) == True
 assert isDiv(4,3) == False
