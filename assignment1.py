@@ -21,12 +21,17 @@ Your recipe:
 import random
 
 def randomIngredient():
-    pass
-    #random.randint(0,200)
+    ingredientList=random.sample(['sugar', random.randint(1,100),'milk','chicken','butter','salt'],k=5)
+    #randomNumber=random.randint(0,100)
+    return ingredientList
+    #,randomNumber
 
-ingredientList=random.sample(['sugar','milk','chicken','butter','salt'],k=5)
 
-print(ingredientList)
+
+print(randomIngredient())
+
 for i in range(0,5):
-    x=ingredientList.pop(0)
+    #x=ingredientlist.pop(0)
+    x=randomIngredient().pop(0)
+    # function here runs anew every time it is called; find way to make it stay same
     print(x)
