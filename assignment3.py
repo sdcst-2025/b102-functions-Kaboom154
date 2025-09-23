@@ -8,8 +8,8 @@ Criteria
 """
 
 def get_integer_input():
-    integer=int(input('integer:'))
-    return integer
+    integer=input('integer:')
+    return int(integer)
 
 if __name__ == "__main__":
     user_input = get_integer_input()
