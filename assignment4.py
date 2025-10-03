@@ -21,18 +21,14 @@ def get_integer_input():
 
 integerInput = get_integer_input()
 integerList=[]
+for a in range (2,integerInput-1):
+    for n in range (2,a):  #factors of integer
+            if integerInput % n == 0:
+                integerList.append (n)
+                integerInput = integerInput / n
 
-def divCheck():
-    #while divCheck() > 0:
-    #for i in range (0,10):
-        if integerInput % 2 == 0:
-            integerList.append(2)
-            return integerInput / 2
-        if integerInput % 5 == 0:
-            integerList.append(5)
-            return integerInput / 5
-        if integerInput % 7 == 0:
-            integerList.append(7)
-            return integerInput / 7
-        
-print(integerInput,integerList,divCheck())
+
+
+
+print(integerList)
+
